@@ -39,7 +39,7 @@ void setup() {
 
   video.start();
   
-  println(Serial.list()); // List COM-ports (Use this to figure out which port the Arduino is connected to)
+  printArray(Serial.list()); // List COM-ports (Use this to figure out which port the Arduino is connected to)
   printArray(Capture.list());
 
   //select first com-port from the list (change the number in the [] if your sketch fails to connect to the Arduino)

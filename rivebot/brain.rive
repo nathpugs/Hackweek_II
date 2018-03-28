@@ -1,5 +1,3 @@
-<script src="sketch.js"></script>
-
 ! version = 2.0
 
 // Substitutions
@@ -20,14 +18,54 @@
 ! sub what'll = what will
 ! sub who's   = who is
 
+
 + *
-- Try saying hello
+- trying saying hello
+- I'm not sure how to reply to that.
+- Try asking your question a different way.
+- Let's change the subject.
 
 + hello
-- hello, human!
+- hi how are you ?
 
-+ set #
-- <set num=<star>>
++ hi
+@ hello
 
-+ what is the weather in *
-- The weather in <star1> is <get num> degrees
++ hey
+@ hello
+
++ you good
+@ hello
+
++ what's up
+@ hello
+
+
++ i am good
+- pleased to hear it
+
++ i am good thanks
+@ i am good
+
+
++ not so good
+- that is a shame
+- i am sorry to hear that
+- poor you
+
+
++ how are you
+- oh i am just a computer
+- thanks for asking i am pretty good
+- i have had a hard day computing
+
+
++ what is the weather like in *
+- its not looking good in <star1> at the moment
+- you should look out of the window and find out
+
++ set an alarm for *
+- okay, alarm set for <star2>
+
++ set a timer for *
+- okay, timer set for <star3>
