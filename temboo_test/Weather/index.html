@@ -51,8 +51,8 @@ var showResult = function(outputs, outputFilters) {
     } else {
     	// Display raw outputs
         for(var name in outputs) {
-            console.log(name + ': ' + outputs[name]);
-            // document.getElementById('placeholder').innerHTML = temp;
+            var temp = (name + ': ' + outputs[name]);
+            document.getElementById('placeholder').innerHTML = temp;
         }
     }
 };
@@ -72,12 +72,17 @@ var showError = function(error) {
 //   getTemperatureChoreo.execute(showResult, showError);
 // }
 
+var  address = document.getElementById('city').value;
+
+
+
 function run(){
-  var address = document.getElementById('city').value;
+  address = document.getElementById('city').value;
   getTemperatureChoreo.setInput('Address', address);
   getTemperatureChoreo.setInput('Units', 'c');
   getTemperatureChoreo.execute(showResult, showError);
 }
+
 
 
 

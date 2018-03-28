@@ -43,7 +43,7 @@ void setup() {
   printArray(Capture.list());
 
   //select first com-port from the list (change the number in the [] if your sketch fails to connect to the Arduino)
-  port = new Serial(this, Serial.list()[6], 57600);   //Baud rate is set to 57600 to match the Arduino baud rate.  
+  port = new Serial(this, Serial.list()[5], 57600);   //Baud rate is set to 57600 to match the Arduino baud rate.  
   
   //Send the initial pan/tilt angles to the Arduino to set the device up to look straight forward.
   //port.write(tiltChannel);    //Send the Tilt Servo ID
