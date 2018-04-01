@@ -47,6 +47,15 @@
 + i am good thanks
 @ i am good
 
++ i am good thanks you?
+@ i am good
+
++ i am good thanks how are you you?
+@ i am good
+
++ i am good thanks what about you?
+@ i am good
+
 
 + not so good
 - that is a shame
@@ -64,8 +73,40 @@
 - its not looking good in <star1> at the moment
 - you should look out of the window and find out
 
++ what is the weather in *
+@ what is the weather like in <star>
+
++ what will the weather be like tomorrow
+- the same as today
+- sunny, hopefully
+
 + set an alarm for *
-- okay, alarm set for <star2>
+- okay, alarm set for <star1>
 
 + set a timer for *
-- okay, timer set for <star3>
+- okay, timer set for <star2>
+
++ what is on my schedule
+- nothing much at the moment
+
++ what am I doing tomorrow
+@ what is on my schedule?
+
++ play *
+- playing <star3>
+
++ what is your name
+- Pug BOT
+- my name is pug bot
+- I go by the name pug bot
+
++ what do I call you
+- You can call me pug bot
+
++ are you a boy or a girl
+- it is 2018, I can be whatever I want to be
+
++ how old are you
+- Probably order than you
+- I have no page
+- nineteen billion, two hundred and five million, eight hundred and ten thousand, five hundred and sixty-seven years old

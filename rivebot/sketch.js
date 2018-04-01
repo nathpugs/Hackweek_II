@@ -8,8 +8,7 @@ var q;
 var bot;
 
 function setup(){
- createCanvas(100,100);
- background(0);
+
 
  //use select to grab the data from the specific id element on the html page
  b = select('#submit');
@@ -25,7 +24,7 @@ function setup(){
  bot.loadFile("./brain.rive",botReady,botError); //2 functions
 
  // speech stuff
- talk.speak("hello you are talking to rivescript"); // say something to begin and ensure speech works
+ talk.speak("Hey! You're speaking to pug bot. How can I help?"); // say something to begin and ensure speech works
 
  listen.continuous = true; //constant listen
  listen.onResult = showResult; // trigger the function on every listen
@@ -34,9 +33,8 @@ function setup(){
 
 function botReady(){
   //console.log('rivescript loaded');
-  createP(" - CHAT TRANSCRIPT - ")
-  createP("RiveScript is Loaded. ChatBot active");
-  createP("Hello User, how can I help you today ?");
+  createP("<center><h1> - CHAT TRANSCRIPT - </h1></center>")
+  createP("<center><i>PugBOT has loaded. How can I help?</i></center>");
 
   bot.sortReplies(); //gets the file ready with the list of potential answers
 }
@@ -49,31 +47,21 @@ function chatBot(){
  var question = q.value(); //get what is written in that
  // pass it to rivescript
  var reply = bot.reply("local-user",question);
- //output the rivescript answer in teh box
+ //output the rivescript answer in the box
  a.value(reply);
 
  // talk the rivescript answer
  talk.speak(reply);
- createP(reply); //also add it to teh transcript
+ createP('<b>REPLY:</b>   ' + reply); //also add it to the transcript
 }
 
 
-function draw(){
-  //interactive drawing at the same time
- fill(200,20,200,90);
- ellipse(mouseX,mouseY,10,10);
-}
-
-
-function keyPressed(){
-  //talk.speak("hi there bot");
-}
 
 function showResult(){
 // output what we just said to the console or the window
   //console.log(listen.resultString);
 
-  createP(listen.resultString);
+  createP('<b>INPUT:</b>   ' + listen.resultString);
 
   q.value(listen.resultString); //put the answer from us into the question
   chatBot(); //run the chatbot code instead of pressing the button

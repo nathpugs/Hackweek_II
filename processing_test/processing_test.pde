@@ -33,7 +33,7 @@ int stepSize=1;
 
 void setup() {
   size(640, 480);
-  video = new Capture(this, 640/2, 480/2, Capture.list()[3], 30);
+  video = new Capture(this, 640/2, 480/2, Capture.list()[9], 30);
   opencv = new OpenCV(this, 640/2, 480/2);
   opencv.loadCascade(OpenCV.CASCADE_FRONTALFACE);  
 
